@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://astonishedorca14.github.io/cs1300-development/`
+If you used the stencil code, this is `https://astonisheorca14.github.io/cs1300-development`
 
 ### Goal and Value of the Application
 
@@ -21,9 +21,17 @@ Another usability principle considered for the website is consistency. The websi
 
 ### Organization of Components
 
-I used four components: 
+I used four components: FilterBar, SortBar, FlightItem, and Aggregator.
 
 ### How Data is Passed Down Through Components
+Data is passed down through components in React through props, which stands for properties. Props are a way for components to receive data from their parent component. The parent component passes the data down to its child component as props, and the child component receives and uses the data.
+
+In my website, for each component, I pass data through App.js through each component. For instance, for the component FilterBar, I pass the data through App.js to FilterBar.js. Then, in FilterBar.js, I pass in the functions that update use states such as setStops and setDuration so that we can reflect the options
+in the flights that are displayed. 
 
 ### How the User Triggers State Changes
+
+Users trigger state changes by updating the useState variables. Each of the useState variables is updated by a function that is passed down from App.js to FilterBar.js. For instance, the useState variable stops is updated by the function setStops. The function setStops is passed down from App.js.
+For this website, there's useState variables for cost, duration, items to be displayed, sort type, and destinations. For most of the useState varibales, they are 
+updated through events (either onClick or onChange) on the components FilterBar.js and SortBar.js.
 
