@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://astonisheorca14.github.io/cs1300-development`
+If you used the stencil code, this is `https://astonishedorca14.github.io/cs1300-development/`
 
 ### Goal and Value of the Application
 
@@ -22,6 +22,13 @@ Another usability principle considered for the website is consistency. The websi
 ### Organization of Components
 
 I used four components: FilterBar, SortBar, FlightItem, and Aggregator.
+
+FilterBar and SortBar, as the name imply, are used to filter and sort the flights. They house the html for the various dropdown, checkboxes, and buttons. These two component's props 
+are primarily helper functions that update the use state variables of the filter type and sort type.
+
+FlightItem represents each "card" that is displayed in the flight store. It houses the html for the flight information, and the buttons that allow the user to save flights.
+
+Aggregator is the "Watch Cart", which accumlates the flights that the user has saved. It houses the html for dispalying the total duration of flights and cost for the user's the saved flights.
 
 ### How Data is Passed Down Through Components
 Data is passed down through components in React through props, which stands for properties. Props are a way for components to receive data from their parent component. The parent component passes the data down to its child component as props, and the child component receives and uses the data.
