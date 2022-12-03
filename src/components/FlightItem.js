@@ -23,6 +23,9 @@ export default function FlightItem(props) {
                 <Button variant="primary" onClick={() => props.incrementCart(props)}>Save</Button>
                 <Button variant="danger" onClick={() => props.decrementCart(props)}>Remove</Button>
             </div>
+            <div class-name="flight-item-img">
+                <img src={props.img} />
+            </div>
         </div>
     )
 }
