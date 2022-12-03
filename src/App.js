@@ -118,6 +118,7 @@ function App() {
                                             numStops={item.numStops}
                                             incrementCart={incrementCart}
                                             decrementCart={decrementCart}
+                                            img = {"images/" + item.airport + ".jpg"}
                                         />
                                     )
                                 }
